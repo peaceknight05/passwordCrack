@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C30FE2D2124706600DA8F09 /* rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C30FE2C2124706600DA8F09 /* rounding.swift */; };
 		8C701FFA211FE6A900C21B34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C701FF9211FE6A900C21B34 /* AppDelegate.swift */; };
 		8C701FFC211FE6A900C21B34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C701FFB211FE6A900C21B34 /* ViewController.swift */; };
 		8C701FFF211FE6A900C21B34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C701FFD211FE6A900C21B34 /* Main.storyboard */; };
 		8C702001211FE6AA00C21B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C702000211FE6AA00C21B34 /* Assets.xcassets */; };
 		8C702004211FE6AA00C21B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C702002211FE6AA00C21B34 /* LaunchScreen.storyboard */; };
+		8C8D816C21242577004DD130 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 8C8D816B21242577004DD130 /* index.js */; };
+		8C8D816E21242C37004DD130 /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8C8D816D21242C37004DD130 /* test.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C30FE2C2124706600DA8F09 /* rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rounding.swift; sourceTree = "<group>"; };
 		8C701FF6211FE6A900C21B34 /* passwordCrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passwordCrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C701FF9211FE6A900C21B34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C701FFB211FE6A900C21B34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		8C702000211FE6AA00C21B34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C702003211FE6AA00C21B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C702005211FE6AA00C21B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C8D816B21242577004DD130 /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = index.js; path = ../../../Desktop/qgtest/index.js; sourceTree = "<group>"; };
+		8C8D816D21242C37004DD130 /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = test.txt; path = ../../../Desktop/qgtest/test.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		8C701FF8211FE6A900C21B34 /* passwordCrack */ = {
 			isa = PBXGroup;
 			children = (
+				8C8D816D21242C37004DD130 /* test.txt */,
+				8C8D816B21242577004DD130 /* index.js */,
 				8C701FF9211FE6A900C21B34 /* AppDelegate.swift */,
 				8C701FFB211FE6A900C21B34 /* ViewController.swift */,
 				8C701FFD211FE6A900C21B34 /* Main.storyboard */,
 				8C702000211FE6AA00C21B34 /* Assets.xcassets */,
 				8C702002211FE6AA00C21B34 /* LaunchScreen.storyboard */,
 				8C702005211FE6AA00C21B34 /* Info.plist */,
+				8C30FE2C2124706600DA8F09 /* rounding.swift */,
 			);
 			path = passwordCrack;
 			sourceTree = "<group>";
@@ -125,6 +134,8 @@
 				8C702004211FE6AA00C21B34 /* LaunchScreen.storyboard in Resources */,
 				8C702001211FE6AA00C21B34 /* Assets.xcassets in Resources */,
 				8C701FFF211FE6A900C21B34 /* Main.storyboard in Resources */,
+				8C8D816C21242577004DD130 /* index.js in Resources */,
+				8C8D816E21242C37004DD130 /* test.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C701FFC211FE6A900C21B34 /* ViewController.swift in Sources */,
+				8C30FE2D2124706600DA8F09 /* rounding.swift in Sources */,
 				8C701FFA211FE6A900C21B34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +292,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4NKBK9JGJL;
 				INFOPLIST_FILE = passwordCrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +302,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = peaceknight05.passwordCrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,7 +312,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4NKBK9JGJL;
 				INFOPLIST_FILE = passwordCrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = peaceknight05.passwordCrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
